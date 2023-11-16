@@ -1,9 +1,9 @@
 import random
 import math
 
-'''
-Írj eljárást, mely paraméterében kap két egész számot. 
-Ezen két egész szám közötti páros számok összegét számolja ki az eljárás.
+
+# Írj eljárást, mely paraméterében kap két egész számot. 
+# Ezen két egész szám közötti páros számok összegét számolja ki az eljárás. 
 
 def paros1(min:int, max:int):
     i=min
@@ -17,8 +17,7 @@ def paros1(min:int, max:int):
     #ciklus vége
     print(f"A páros számok összege: {osszeg}")
     return osszeg
-    '''
-
+   
 def paros2(min:int, max:int):
     #i=min
     osszeg:int = 0
@@ -30,12 +29,10 @@ def paros2(min:int, max:int):
     print(f"A páros számok összege: {osszeg}")
     return osszeg
 
-'''
-Írj függvényt, amely generál 20 db véletlen számot -10 és 10 között.
-Számold meg hány negatív szám van közötte.
-A visszatérési érték a negatív számok száma
-'''
-'''
+
+# Írj függvényt, amely generál 20 db véletlen számot -10 és 10 között.
+# Számold meg hány negatív szám van közötte. A visszatérési érték a negatív számok száma
+
 def negativ1():
     i:int = 0
     db:int=0
@@ -46,7 +43,7 @@ def negativ1():
             db+=1
         i+=1
     return db
-'''
+
 
 def negativ2():
     #i:int =0
@@ -59,7 +56,7 @@ def negativ2():
         #i+=1
     return 
 
-#Írj függvényt, ami generál 10 db véletlen számot 12 és 33 között és visszatér ezek összegével
+#Írj függvényt, ami generál 10 db véletlen számot [12, 33] között és visszatér ezek összegével
 def veletlen1():
     vel_osszeg:int =0
     for i in range(0,10,1):
@@ -71,7 +68,7 @@ def veletlen2():
     i:int =0
     vel_osszeg:int =0
     while i<=10:
-        szam:int = math.floor(random.random()*(34-12)+12)
+        szam:int = math.floor(random.random()*22+12)
         vel_osszeg+=szam
         i+=1
     return vel_osszeg
