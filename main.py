@@ -18,3 +18,7 @@ print(f"A véletlen számok összege: {vel_osszeg}")
 feladatok.feladat1()
 feladatok.atlag()
 feladatok.feladat2()
+
+feladatok.veletlen2()
+feladatok.atlag2()
+feladatok.feladat1While()

@@ -60,11 +60,20 @@ def negativ2():
     return 
 
 #Írj függvényt, ami generál 10 db véletlen számot 12 és 33 között és visszatér ezek összegével
-def veletlen():
+def veletlen1():
     vel_osszeg:int =0
     for i in range(0,10,1):
         szam:int = math.floor(random.random()*(34-12)+12)
         vel_osszeg+=szam
+    return vel_osszeg
+
+def veletlen2():
+    i:int =0
+    vel_osszeg:int =0
+    while i<=10:
+        szam:int = math.floor(random.random()*(34-12)+12)
+        vel_osszeg+=szam
+        i+=1
     return vel_osszeg
 
 # Írj függvényt, amely generál 8db véletlen számot [20, 50) intervallumban és visszatér ezek közül a legnagyobb számmal.
@@ -76,14 +85,33 @@ def feladat1():
             max=szam
     return max
 
+def feladat1While():
+    i:int=0
+    max:int =0
+    while i<=8:
+        szam:int = math.floor(random.random()*(50-20)+20)
+        if szam>max:
+            max=szam
+        i+=1
+    return max
+
 # Kérjünk be 3db egész számokat a felhasználótól. 
 # mekkora a számok átlaga?
 
-def atlag():
+def atlag1():
     gyujto:int =0
     for i in range(0,3,1):
         szam:int= int(input(f"Kérem az {i+1}. egész számot!: "))
         gyujto+=szam
+    return gyujto/3
+
+def atlag2():
+    i:int=0
+    gyujto:int =0
+    while i<=3:
+        szam:int= int(input(f"Kérem az {i+1}. egész számot!: "))
+        gyujto+=szam
+        i+=1
     return gyujto/3
 
 # Kérkünk be egész számokat a felhasználótól, amyg 0 nem ad. Írjuk ki a számok átlagát.
@@ -98,6 +126,5 @@ def feladat2():
         szamlalo+=1
         i+=1
     return gyujto/(szamlalo-1)
-
 
 
